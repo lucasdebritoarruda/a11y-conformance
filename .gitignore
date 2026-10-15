@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Xcode
+DerivedData/
+*.xcresult
+xcuserdata/
+
+# Relatórios gerados
+a11y-report/

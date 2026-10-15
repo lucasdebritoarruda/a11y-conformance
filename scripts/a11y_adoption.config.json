@@ -1,0 +1,46 @@
+{
+  "_leia": "Ajuste caminhos, padrões de token e classes ao seu projeto. Chaves que começam com _ são ignoradas.",
+
+  "modules_root": "Modules",
+  "modules": {},
+
+  "design_system_paths": ["Packages/DesignSystem/Sources"],
+
+  "exclude_globs": [
+    "**/*Tests/**",
+    "**/*Tests.swift",
+    "**/*Tests.m",
+    "**/Pods/**",
+    "**/Carthage/**",
+    "**/.build/**",
+    "**/DerivedData/**",
+    "**/SourcePackages/**"
+  ],
+
+  "ds_interactive_extra": [],
+  "ds_interactive_exclude": [],
+  "ds_label_class": "DSLabel",
+
+  "_font_tokens": "Cada DSLabel criado conta como um uso de token de fonte; DSTextStyle.x.font cobre o uso direto do estilo (ajuste ao nome real da propriedade).",
+  "font_token_patterns": [
+    "\\bDSLabel\\s*(?:\\.init)?\\s*\\(",
+    "\\bDSTextStyle\\.\\w+\\.(?:font|uiFont)\\b"
+  ],
+  "_color_tokens": "Casa DSColor.secondary00.uiColor e também o token passado direto a um componente (DSColor.secondary00).",
+  "color_token_patterns": ["\\bDSColor\\.\\w+"],
+
+  "xib_named_colors_are_tokens": true,
+  "xib_color_keys": [
+    "textColor", "titleColor", "tintColor", "onTintColor", "thumbTintColor",
+    "selectedSegmentTintColor", "highlightedColor", "placeholderColor"
+  ],
+
+  "allow_marker": "a11y-ok",
+  "allowlist_file": "a11y-allowlist.txt",
+
+  "extra_patterns": {
+    "swift": {},
+    "objc": {}
+  },
+  "disabled_patterns": []
+}
